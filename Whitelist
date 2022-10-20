@@ -1,3 +1,4 @@
+local lplr = game:GetService("Players").LocalPlayer
 local Player = game.Players.LocalPlayer
 wait(1)
 if Player.UserId == 3985412551 then
