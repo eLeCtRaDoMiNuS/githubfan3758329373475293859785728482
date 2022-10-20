@@ -266,7 +266,7 @@ runcode(function()
         ["Round"] = 1
     })
     Tick = KillAura:CreateSlider({
-        ["Name"] = "Tick",
+        ["Name"] = "Ticks",
         ["Function"] = function() end,
         ["Min"] = 0,
         ["Max"] = 1,
@@ -324,13 +324,6 @@ runcode(function()
                 bedwars["CombatConstant"].RAYCAST_SWORD_CHARACTER_DISTANCE = 14.4
             end
         end
-    })
-    Value = Reach:CreateSlider({
-        ["Name"] = "Amount",
-        ["Function"] = function() end,
-        ["Min"] = 1,
-        ["Max"] = 25,
-        ["Default"] = 25,
     })
 end)
  
