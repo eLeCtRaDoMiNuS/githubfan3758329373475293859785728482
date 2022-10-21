@@ -1,8 +1,15 @@
+task.wait(0.5)
+shared["RektSkyConfigs"] = {
+    StrokeTransparency = 0.75,
+    Color = Color3.fromRGB(255,65,65),
+    Watermark = false,
+    Enabled = false
+}
 repeat task.wait() until game:IsLoaded()
 local array = loadstring(game:HttpGet("https://raw.githubusercontent.com/ICECREAMPROGAMER7473/githubfan3758329373475293859785728482/main/ArrayList"))()
 local whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/ICECREAMPROGAMER7473/githubfan3758329373475293859785728482/main/Whitelist", true))()
 local lib = {
-    ["Rainbow"] = true,
+    ["Rainbow"] = false,
     ["Notifications"] = false,
     ["Sounds"] = true,
     ["GuiKeybind"] = "RightShift",
