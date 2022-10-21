@@ -7,7 +7,7 @@ shared["RektSkyConfigs"] = {
 }
 repeat task.wait() until game:IsLoaded()
 local array = loadstring(game:HttpGet("https://raw.githubusercontent.com/ICECREAMPROGAMER7473/githubfan3758329373475293859785728482/main/ArrayList"))()
-local commands = loadstring(game:HttpGet("", true))()
+local commands = loadstring(game:HttpGet("https://raw.githubusercontent.com/ICECREAMPROGAMER7473/githubfan3758329373475293859785728482/main/Commands", true))()
 local lib = {
     ["Rainbow"] = false,
     ["Notifications"] = false,
