@@ -1,7 +1,7 @@
 task.wait(0.5)
 shared["RektSkyConfigs"] = {
     StrokeTransparency = 0.75,
-    Color = Color3.fromRGB(255,65,65),
+    Color = Color3.fromRGB(255,255,255),
     Watermark = false,
     Enabled = false
 }
