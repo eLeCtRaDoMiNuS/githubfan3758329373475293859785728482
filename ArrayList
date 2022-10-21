@@ -52,6 +52,7 @@ function rainbow()
     end
 end
 
+rainbow()
 
 local array = Instance.new("ScreenGui", game:GetService("CoreGui"))
 local arrayFrame = Instance.new("Frame", array)
