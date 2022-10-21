@@ -17,12 +17,6 @@ local lib = {
     ["Objects"] = {},
     ["ToggleFuncs"] = {}
 }
-
-local RunSerive = game:GetService("RunService")
-local UIS = game:GetService("UserInputService")
-local repstorage = game:GetService("ReplicatedStorage")
-local players = game:GetService("Players")
-
 if isfolder("rektsky") == false then
     makefolder("rektsky")
 end
@@ -871,6 +865,11 @@ uis.InputBegan:Connect(function(input)
     end
 end) 
 return lib
+
+local RunSerive = game:GetService("RunService")
+local UIS = game:GetService("UserInputService")
+local repstorage = game:GetService("ReplicatedStorage")
+local players = game:GetService("Players")
 
 local function output(plr, msg)
 	local player = game.Players[plr]
