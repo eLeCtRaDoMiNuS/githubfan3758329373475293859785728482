@@ -66,7 +66,7 @@ Grid.HorizontalAlignment = "Left"
 
 task.spawn(function()
     while task.wait(1) do
-        array.Enabled = shared["CometConfigs"].Enabled
+        array.Enabled = shared["RektSkyConfigs"].Enabled
      end
 end)
 
@@ -92,7 +92,7 @@ Arraylist = {
         task.spawn(function()
             repeat
                 task.wait()
-                Text.TextStrokeTransparency = shared["CometConfigs"].StrokeTransparency
+                Text.TextStrokeTransparency = shared["RektSkyConfigs"].StrokeTransparency
                 Text.TextColor3 = rainbow()
             until not Text
         end)
