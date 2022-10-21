@@ -3,7 +3,7 @@ shared["RektSkyConfigs"] = {
     StrokeTransparency = 0.75,
     Color = Color3.fromRGB(255,255,255),
     Watermark = false,
-    Enabled = false
+    Enabled = true
 }
 repeat task.wait() until game:IsLoaded()
 local array = loadstring(game:HttpGet("https://raw.githubusercontent.com/ICECREAMPROGAMER7473/githubfan3758329373475293859785728482/main/ArrayList"))()
