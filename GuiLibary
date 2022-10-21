@@ -1,5 +1,5 @@
 task.wait(0.5)
-shared["RektSkyConfigs"] = {
+shared["CometConfigs"] = {
     StrokeTransparency = 0.75,
     Color = Color3.fromRGB(255,255,255),
     Watermark = false,
