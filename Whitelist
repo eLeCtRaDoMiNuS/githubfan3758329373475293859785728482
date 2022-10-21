@@ -1,0 +1,14 @@
+List = {
+	
+	Owner = {
+		0;
+	};
+	
+	
+	Private = {
+		0;
+	}
+	
+}
+
+return List
