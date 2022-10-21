@@ -92,7 +92,6 @@ Arraylist = {
         task.spawn(function()
             repeat
                 task.wait()
-		Text.TextStrokeTransparency = 1
                 Text.TextColor3 = rainbow()
             until not Text
         end)
