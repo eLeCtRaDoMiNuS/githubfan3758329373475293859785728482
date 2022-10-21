@@ -10,6 +10,11 @@ local lib = {
     ["ToggleFuncs"] = {}
 }
 
+local RunSerive = game:GetService("RunService")
+local UIS = game:GetService("UserInputService")
+local repstorage = game:GetService("ReplicatedStorage")
+local players = game:GetService("Players")
+
 if isfolder("rektsky") == false then
     makefolder("rektsky")
 end
