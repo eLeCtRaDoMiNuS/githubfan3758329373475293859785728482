@@ -66,7 +66,7 @@ Grid.HorizontalAlignment = "Left"
 
 task.spawn(function()
     while task.wait(1) do
-        array.Enabled = shared["RektSkyConfigs"].Enabled
+        array.Enabled = shared["CometConfigs"].Enabled
      end
 end)
 
