@@ -1,11 +1,3 @@
-task.delay(0.5, function()
-    game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
-        Text = "RektSky Custom loaded successfully!",
-        Color = Color3.fromRGB(255,255,255),
-        Font = Enum.Font.SourceSansBold
-    })
-end)
-
 task.spawn(function()
 
 
