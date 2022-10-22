@@ -852,14 +852,6 @@ function lib:CreateWindow()
     end
 end
 
-task.delay(0.5, function()
-    game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
-        Text = "RektSky Custom loaded successfully!",
-        Color = Color3.fromRGB(255,255,255),
-        Font = Enum.Font.SourceSansBold
-    })
-end)
-
 lib:ToggleLib()
 uis.InputBegan:Connect(function(input)
     if input.KeyCode == Enum.KeyCode.RightShift then
@@ -867,3 +859,11 @@ uis.InputBegan:Connect(function(input)
     end
 end) 
 return lib
+
+task.delay(0.5, function()
+    game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
+        Text = "RektSky Custom loaded successfully!",
+        Color = Color3.fromRGB(255,255,255),
+        Font = Enum.Font.SourceSansBold
+    })
+end)
