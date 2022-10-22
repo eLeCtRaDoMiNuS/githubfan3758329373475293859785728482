@@ -89,7 +89,7 @@ Arraylist = {
         Text.TextXAlignment = "Right"
         Text.LayoutOrder = -size.X
 	Text.TextColor3 = Color3.new(255/255, 255/255, 255/255)
-	Text.TextStrokeTransparency = 0.8
+	Text.TextStrokeTransparency = 0
         task.spawn(function()
             repeat
                 task.wait()
