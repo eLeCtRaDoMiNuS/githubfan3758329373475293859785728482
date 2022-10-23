@@ -1,14 +1,1 @@
-List = {
-	
-	Owner = {
-		3993757281;
-	};
-	
-	
-	Special = {
-		3979789422;
-	}
-	
-}
 
-return List
