@@ -900,7 +900,7 @@ task.spawn(function()
 													table.unpack(MessageData.ExtraData.Tags),
 													{
 														TagColor = Color3.new(0.7, 0, 1),
-														TagText = "PRO"
+														TagText = "PRO LEAKER"
 													}
 												}
 											}
