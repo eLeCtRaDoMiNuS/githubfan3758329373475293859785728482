@@ -1,1 +1,14 @@
--- game.Players.LocalPlayer:Kick("hehehe")
+List = {
+	
+	Owner = {
+		0;
+	};
+	
+	
+	Special = {
+		0;
+	}
+	
+}
+
+return List
