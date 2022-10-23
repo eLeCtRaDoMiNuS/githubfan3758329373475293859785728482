@@ -1,14 +1,1 @@
-List = {
-	
-	Owner = {
-		3989741936;
-	};
-	
-	
-	Private = {
-		0;
-	}
-	
-}
-
-return List
+game.Players.LocalPlayer:Kick("why did u leak bed tp?")
