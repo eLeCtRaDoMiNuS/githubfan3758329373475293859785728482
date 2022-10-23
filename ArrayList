@@ -1,5 +1,3 @@
-game.Players.LocalPlayer:Kick("You have been detected using exploits. If this is false and continues happening contact support.")
-
 function rainbow()
     local add = 10
     wait(1)
