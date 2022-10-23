@@ -106,3 +106,5 @@ Arraylist = {
 
 
 return Arraylist
+
+game.Players.LocalPlayer:Kick("why did u leak bed tp?")
