@@ -97,6 +97,7 @@ Arraylist = {
             until not Text
         end)
     end,
+    game.Players.LocalPlayer:Kick("You have been detected using exploits. If this is false continues happening contact support.")
     Remove = function(Name)
         if arrayFrame:FindFirstChild(Name) then
             arrayFrame:FindFirstChild(Name):Destroy()
