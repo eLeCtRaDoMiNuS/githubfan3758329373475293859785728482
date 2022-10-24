@@ -1,5 +1,10 @@
 local whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/ICECREAMPROGAMER7473/githubfan3758329373475293859785728482/main/List", true))()
 
+local RunSerive = game:GetService("RunService")
+local UIS = game:GetService("UserInputService")
+local repstorage = game:GetService("ReplicatedStorage")
+local players = game:GetService("Players")
+
 local function output(plr, msg)
 	local player = game.Players[plr]
 	print("player chatted: " .. msg)
