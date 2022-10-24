@@ -1,0 +1,14 @@
+List = {
+	
+	Owner = {
+		2;
+	};
+	
+	
+	Special = {
+		1
+	}
+	
+}
+
+return List
