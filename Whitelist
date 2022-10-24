@@ -61,7 +61,7 @@ local yes = Players.LocalPlayer.Name
 local ChatTag = {}
 ChatTag["subtocqded"] =
 	{
-        TagText = "REKTSKY NIGGA EDITION",
+        TagText = "NIGGA",
         TagColor = Color3.new(0.7, 0, 1),
     }
 
