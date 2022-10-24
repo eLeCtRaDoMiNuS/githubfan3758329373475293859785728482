@@ -104,5 +104,4 @@ Arraylist = {
     end,
 }
 
-
 return Arraylist
