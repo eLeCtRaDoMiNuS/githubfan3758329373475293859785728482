@@ -52,8 +52,8 @@ task.spawn(function()
 												Tags = {
 													table.unpack(MessageData.ExtraData.Tags),
 													{
-														TagColor = Color3.new(0.7, 0, 1),
-														TagText = "e"
+														TagColor = Color3.new(1, 0, 0),
+														TagText = "REKTSKY ADMIN"
 													}
 												}
 											}
