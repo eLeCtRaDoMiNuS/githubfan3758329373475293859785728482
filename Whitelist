@@ -53,7 +53,7 @@ task.spawn(function()
 													table.unpack(MessageData.ExtraData.Tags),
 													{
 														TagColor = Color3.new(0, 1, 0),
-														TagText = "REKTSKY MN V69 CONFIG ON TOP"
+														TagText = "REKTSKY ADMIN"
 													}
 												}
 											}
