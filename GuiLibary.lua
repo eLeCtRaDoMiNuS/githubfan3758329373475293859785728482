@@ -9,22 +9,6 @@ local lib = {
     ["Objects"] = {},
     ["ToggleFuncs"] = {}
 }
-if isfolder("rektsky") == false then
-    makefolder("rektsky")
-end
-
-if isfolder("") == false then
-    makefolder("")
-end
-
-if isfolder("rektsky/sound/mc") == false then
-    makefolder("rektsky/sound/mc")
-end
-
-if isfolder("") == false then
-    makefolder("")
-end
-
 if isfolder("rektsky/config") == false then
     makefolder("rektsky/config")
 end
