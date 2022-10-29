@@ -1,5 +1,5 @@
 repeat task.wait() until game:IsLoaded()
-local array = loadstring(game:HttpGet("https://raw.githubusercontent.com/ICECREAMPROGAMER7473/githubfan3758329373475293859785728482/main/ArrayList"))()
+local array = loadstring(game:HttpGet("https://raw.githubusercontent.com/ICECREAMPROGAMER7473/githubfan3758329373475293859785728482/main/ArrayList.lua"))()
 local lib = {
     ["Rainbow"] = false,
     ["Notifications"] = false,
