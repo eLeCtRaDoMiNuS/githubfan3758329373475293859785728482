@@ -531,7 +531,7 @@ function lib:CreateWindow()
                         array.Add(data["Name"])
                     end)
                     spawn(function()
-                        createnotification(title, "Enabled "..title, 4, true)
+                        print("Enabled")
                         configtable[title]["IsToggled"] = true
                     end)
                     toggle.BackgroundColor3 = tabname.TextColor3
