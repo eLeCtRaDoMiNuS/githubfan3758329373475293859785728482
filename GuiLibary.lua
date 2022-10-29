@@ -193,7 +193,7 @@ local function createnotification(title, text, delay2, toggled)
         frameborder.BackgroundColor3 = (toggled and Color3.fromRGB(102, 205, 67) or Color3.fromRGB(205, 64, 78))
         frameborder.Parent = frame
         local frametitle = Instance.new("TextLabel")
-        frametitle.Font = Enum.Font.SourceSansLight
+        frametitle.Font = Enum.Font.SourceSans
         frametitle.BackgroundTransparency = 1
         frametitle.Position = UDim2.new(0, 0, 0, 30)
         frametitle.TextColor3 = (toggled and Color3.fromRGB(102, 205, 67) or Color3.fromRGB(205, 64, 78))
@@ -204,7 +204,7 @@ local function createnotification(title, text, delay2, toggled)
         frametitle.TextYAlignment = Enum.TextYAlignment.Top
         frametitle.Parent = frame
         local frametext = Instance.new("TextLabel")
-        frametext.Font = Enum.Font.SourceSansLight
+        frametext.Font = Enum.Font.SourceSans
         frametext.BackgroundTransparency = 1
         frametext.Position = UDim2.new(0, 0, 0, 68)
         frametext.TextColor3 = Color3.new(1, 1, 1)
@@ -315,6 +315,7 @@ function lib:CreateWindow()
         tab.ZIndex = 1
         tab.Parent = TabsFrame
         tab.BackgroundColor3 = Color3.fromRGB(14, 14, 23)
+        tab.TextColor3 = Color3.fromRGB(14, 14, 23)
         tab.BorderSizePixel = 0
         tab.Position = UDim2.new(0,40,0.858895704, 0)
         tab.Size = UDim2.new(0, 207, 0, 40)
