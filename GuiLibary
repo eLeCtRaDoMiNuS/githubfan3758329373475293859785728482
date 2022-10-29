@@ -296,9 +296,9 @@ end
 local function playdingsound(istrue) 
     if lib["Sounds"] then
         if istrue then
-            playsound(getcustomassetfuncforsounds("rektsky/sound/enable.mp3") or getasset("rektsky/sound/enable.mp3"))
+            playsound(getcustomassetfuncforsounds("rektsky/sound/enable.mp3") or getasset("rektsky/sound/"))
         else
-            playsound(getcustomassetfuncforsounds("rektsky/sound/disable.mp3") or getasset("rektsky/sound/disable.mp3"))
+            playsound(getcustomassetfuncforsounds("rektsky/sound/disable.mp3") or getasset("rektsky/sound/"))
         end
     end
 end
