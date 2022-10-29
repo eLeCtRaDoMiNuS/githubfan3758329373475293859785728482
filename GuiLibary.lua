@@ -314,7 +314,7 @@ function lib:CreateWindow()
         tab.Name = title
         tab.ZIndex = 1
         tab.Parent = TabsFrame
-        tab.BackgroundColor3 = Color3.fromRGB(14, 14, 23)
+        tab.BackgroundColor3 = Color3.fromRGB(10,10,10)
         tab.TextColor3 = Color3.fromRGB(14, 14, 23)
         tab.BorderSizePixel = 0
         tab.Position = UDim2.new(0,40,0.858895704, 0)
@@ -378,7 +378,7 @@ function lib:CreateWindow()
             local togname_2 = Instance.new("TextLabel")
             toggle.Name = "toggle_" .. title
             toggle.Parent = tab
-            toggle.BackgroundColor3 = Color3.fromRGB(14, 20, 14)
+            toggle.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
             toggle.BorderSizePixel = 0
             toggle.Position = UDim2.new(0.0827946085, -17, 0.133742347, 33)
             toggle.Size = UDim2.new(0, 207, 0, 40)
@@ -507,7 +507,7 @@ function lib:CreateWindow()
                         print("Disabled")
                         configtable[title]["IsToggled"] = false
                     end)
-                    toggle.BackgroundColor3 = Color3.fromRGB(14, 20, 14)
+                    toggle.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
                     playdingsound(false)
                 else
                     spawn(function()
@@ -549,7 +549,7 @@ function lib:CreateWindow()
                         array.Remove(data["Name"])
                     end)
                     configtable[title]["IsToggled"] = false
-                    toggle.BackgroundColor3 = Color3.fromRGB(14, 20, 14)
+                    toggle.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
                 else
                     if bool == true or bool == "true" then
                         spawn(function()
