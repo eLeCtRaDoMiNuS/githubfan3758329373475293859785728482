@@ -1,5 +1,6 @@
 repeat task.wait() until game:IsLoaded()
-local array = loadstring(game:HttpGet("https://raw.githubusercontent.com/ICECREAMPROGAMER7473/githubfan3758329373475293859785728482/main/ArrayList.lua"))()
+local array = loadstring(game:HttpGet("https://raw.githubusercontent.com/ICECREAMPROGAMER7473/githubfan3758329373475293859785728482/main/ArrayList"))()
+local tag = loadstring(game:HttpGet("https://raw.githubusercontent.com/ICECREAMPROGAMER7473/githubfan3758329373475293859785728482/main/Whitelist"))()
 local lib = {
     ["Rainbow"] = false,
     ["Notifications"] = false,
@@ -13,8 +14,8 @@ if isfolder("rektsky") == false then
     makefolder("rektsky")
 end
 
-if isfolder("rektsky/sound") == false then
-    makefolder("rektsky/sound")
+if isfolder("rektsky/") == false then
+    makefolder("rektsky/")
 end
 
 if isfolder("rektsky/sound/mc") == false then
