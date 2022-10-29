@@ -22,8 +22,8 @@ if isfolder("rektsky/sound/mc") == false then
     makefolder("rektsky/sound/mc")
 end
 
-if isfolder("rektsky/assets") == false then
-    makefolder("rektsky/assets")
+if isfolder("") == false then
+    makefolder("")
 end
 
 if isfolder("rektsky/config") == false then
@@ -359,7 +359,7 @@ function lib:CreateWindow()
         assetthing.BackgroundTransparency = 1
         assetthing.Position = UDim2.new(0.86, 0,0.154, 0)
         assetthing.Size = UDim2.new(0, 30, 0, 30)
-        assetthing.Image = getcustomassetfunc("rektsky/assets/" .. asset .. ".png") or getasset("rektsky/assets/" .. asset .. ".png")
+        assetthing.Image = getcustomassetfunc("" .. asset .. ".png") or getasset("" .. asset .. ".png")
         local tabtable = {
             ["Toggles"]={}
         }
