@@ -106,7 +106,7 @@ local function getcustomassetfunc(path)
         spawn(function()
             local textlabel = Instance.new("TextLabel")
             textlabel.Size = UDim2.new(1, 0, 0, 36)
-            textlabel.Text = "Asteroid V1.00 "..path
+            textlabel.Text = " "..path
             textlabel.BackgroundTransparency = 1
             textlabel.TextStrokeTransparency = 0
             textlabel.TextSize = 30
@@ -135,7 +135,7 @@ local function getcustomassetfuncforsounds(path)
         spawn(function()
             local textlabel = Instance.new("TextLabel")
             textlabel.Size = UDim2.new(1, 0, 0, 36)
-            textlabel.Text = "Asteroid V1.00 "..path
+            textlabel.Text = " "..path
             textlabel.BackgroundTransparency = 1
             textlabel.TextStrokeTransparency = 0
             textlabel.TextSize = 30
@@ -407,6 +407,8 @@ function lib:CreateWindow()
                 optionframe.Position = UDim2.new(0.102424242, 0, 0.237059206, 0)
                 optionframe.Size = UDim2.new(0, 207, 0, 0)
                 optionframe.AutomaticSize = "Y"
+                optionframe.BackgroundTransparency = 0.25
+                optionframe.BorderSizePixel = 0
                 optionframe.Visible = false
                 local UIListLayout = Instance.new("UIListLayout")
                 UIListLayout.Parent = optionframe
