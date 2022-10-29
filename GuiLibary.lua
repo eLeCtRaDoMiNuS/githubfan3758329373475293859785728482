@@ -106,7 +106,7 @@ local function getcustomassetfunc(path)
         spawn(function()
             local textlabel = Instance.new("TextLabel")
             textlabel.Size = UDim2.new(1, 0, 0, 36)
-            textlabel.Text = " "..path
+            textlabel.Text = "Asteroid V1.00 "..path
             textlabel.BackgroundTransparency = 1
             textlabel.TextStrokeTransparency = 0
             textlabel.TextSize = 30
@@ -135,7 +135,7 @@ local function getcustomassetfuncforsounds(path)
         spawn(function()
             local textlabel = Instance.new("TextLabel")
             textlabel.Size = UDim2.new(1, 0, 0, 36)
-            textlabel.Text = " "..path
+            textlabel.Text = "Asteroid V1.00 "..path
             textlabel.BackgroundTransparency = 1
             textlabel.TextStrokeTransparency = 0
             textlabel.TextSize = 30
