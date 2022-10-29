@@ -106,7 +106,7 @@ local function getcustomassetfunc(path)
         spawn(function()
             local textlabel = Instance.new("TextLabel")
             textlabel.Size = UDim2.new(1, 0, 0, 36)
-            textlabel.Text = "Downloading "..path
+            textlabel.Text = " "..path
             textlabel.BackgroundTransparency = 1
             textlabel.TextStrokeTransparency = 0
             textlabel.TextSize = 30
@@ -135,7 +135,7 @@ local function getcustomassetfuncforsounds(path)
         spawn(function()
             local textlabel = Instance.new("TextLabel")
             textlabel.Size = UDim2.new(1, 0, 0, 36)
-            textlabel.Text = "Downloading "..path
+            textlabel.Text = " "..path
             textlabel.BackgroundTransparency = 1
             textlabel.TextStrokeTransparency = 0
             textlabel.TextSize = 30
@@ -147,7 +147,7 @@ local function getcustomassetfuncforsounds(path)
             textlabel:Remove()
         end)
         local req = requestfunc({
-            Url = "https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/"..path:gsub("rektsky/sound", "sound"),
+            Url = "https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/"..path:gsub("", ""),
             Method = "GET"
         })
         writefile(path, req.Body)
@@ -279,9 +279,9 @@ end
 local function playdingsound(istrue) 
     if lib["Sounds"] then
         if istrue then
-            playsound(getcustomassetfuncforsounds("rektsky/sound/") or getasset("rektsky/sound/"))
+            playsound(getcustomassetfuncforsounds("") or getasset(""))
         else
-            playsound(getcustomassetfuncforsounds("rektsky/sound/") or getasset("rektsky/sound/"))
+            playsound(getcustomassetfuncforsounds("") or getasset(""))
         end
     end
 end
