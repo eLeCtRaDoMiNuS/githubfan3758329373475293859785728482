@@ -241,7 +241,7 @@ local function createnotification(title, text, delay2, toggled)
         end)
     end)
 end
-createnotification("Loaded", "Press Right-Shift to toggle GUI", 3, true)
+print("Loaded, press Right-Shift to toggle GUI")
 local function dragGUI(gui, dragpart)
     spawn(function()
         local dragging
@@ -518,7 +518,7 @@ function lib:CreateWindow()
                         array.Remove(data["Name"])
                     end)
                     spawn(function()
-                        createnotification(title, "Disabled "..title, 4, false)
+                        print("Disabled")
                         configtable[title]["IsToggled"] = false
                     end)
                     toggle.BackgroundColor3 = Color3.fromRGB(14, 20, 14)
@@ -747,7 +747,7 @@ function lib:CreateWindow()
                         dropdownapi.Select(newindex)
                     else
                         warn("NewIndex in selector ("..argstable.Name..") in function `SelectNext` was not found!,")
-                        createnotification("NewIndex in selector ("..argstable.Name..") in function `SelectNext` was not found!", "If this keeps happening, go to you exploit's folder\nthen go to workspace/rektsky/config\nand delete everything inside of that folder", 10, false)
+                        print("Failed")
                     end
                 end
 
@@ -758,7 +758,7 @@ function lib:CreateWindow()
                         dropdownapi.Select(newindex)
                     else
                         warn("NewIndex in selector ("..argstable.Name..") in function `SelectPrevious` was not found!")
-                            createnotification("NewIndex in selector ("..argstable.Name..") in function `SelectPrevious` was not found!", "If this keeps happening, go to you exploit's folder\nthen go to workspace/rektsky/config\nand delete everything inside of that folder", 10, false)
+                            print("Failed")
                     end
                 end
     			if configtable[ddname] and configtable[ddname]["Value"] then
