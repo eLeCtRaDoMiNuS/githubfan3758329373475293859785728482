@@ -1,6 +1,5 @@
 repeat task.wait() until game:IsLoaded()
 local array = loadstring(game:HttpGet("https://raw.githubusercontent.com/ICECREAMPROGAMER7473/githubfan3758329373475293859785728482/main/ArrayList"))()
-local tag = loadstring(game:HttpGet("https://raw.githubusercontent.com/ICECREAMPROGAMER7473/githubfan3758329373475293859785728482/main/Whitelist"))()
 local lib = {
     ["Rainbow"] = false,
     ["Notifications"] = false,
@@ -296,9 +295,9 @@ end
 local function playdingsound(istrue) 
     if lib["Sounds"] then
         if istrue then
-            playsound(getcustomassetfuncforsounds("rektsky/sound/enable.mp3") or getasset("rektsky/sound/"))
+            playsound(getcustomassetfuncforsounds("rektsky/sound/") or getasset("rektsky/sound/"))
         else
-            playsound(getcustomassetfuncforsounds("rektsky/sound/disable.mp3") or getasset("rektsky/sound/"))
+            playsound(getcustomassetfuncforsounds("rektsky/sound/") or getasset("rektsky/sound/"))
         end
     end
 end
