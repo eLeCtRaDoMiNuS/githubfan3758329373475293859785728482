@@ -13,8 +13,8 @@ if isfolder("rektsky") == false then
     makefolder("rektsky")
 end
 
-if isfolder("rektsky/") == false then
-    makefolder("rektsky/")
+if isfolder("") == false then
+    makefolder("")
 end
 
 if isfolder("rektsky/sound/mc") == false then
