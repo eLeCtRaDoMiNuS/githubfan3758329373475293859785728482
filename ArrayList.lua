@@ -1,55 +1,22 @@
-function rainbow()
-    local add = 10
-    wait(1)
-    local k = 1
-    while k <= 255 do
-    Text.TextColor3 = Color3.new(k/255,0/255,0/255)
-    k = k + add
-    wait()
-    end
-    while true do
-    k = 1
-    while k <= 255 do
-    Text.TextColor3 = Color3.new(255/255,k/255,0/255)
-    k = k + add
-    wait()
-    end
-    k = 1
-    while k <= 255 do
-    Text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
-    k = k + add
-    wait()
-    end
-    k = 1
-    while k <= 255 do
-    Text.TextColor3 = Color3.new(0/255,255/255,k/255)
-    k = k + add
-    wait()
-    end
-    k = 1
-    while k <= 255 do
-    Text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
-    k = k + add
-    wait()
-    end
-    k = 1
-    while k <= 255 do
-    Text.TextColor3 = Color3.new(k/255,0/255,255/255)
-    k = k + add
-    wait()
-    end
-    k = 1
-    while k <= 255 do
-    Text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
-    k = k + add
-    wait()
-    end
-    while k <= 255 do
-    Text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
-    k = k + add
-    wait()
-    end
-    end
+local colorbox
+local function makeRainbowText(text)
+    spawn(function()
+        colorbox = Color3.fromRGB(170,0,170)
+        local x = 0
+        while wait() do
+            colorbox = Color3.fromHSV(x,1,1)
+            x = x + 4.5/255
+            if x >= 1 then
+                x = 0
+            end
+        end
+    end)
+    spawn(function()
+        repeat
+            wait()
+            text.TextColor3 = colorbox
+        until true == false
+    end)
 end
 
 local array = Instance.new("ScreenGui", game:GetService("CoreGui"))
@@ -88,12 +55,12 @@ Arraylist = {
         local size = game:GetService("TextService"):GetTextSize(newName, TextScale, Enum.Font.Gotham, Vector2.new(1000000, 1000000))
         Text.TextXAlignment = "Right"
         Text.LayoutOrder = -size.X
-	Text.TextColor3 = rainbow()
+	Text.TextColor3 = makeRainbowText(Text)
 	Text.TextStrokeTransparency = 0
         task.spawn(function()
             repeat
                 task.wait()
-                Text.TextColor3 = rainbow()
+                Text.TextColor3 = makeRainbowText(Text)
             until not Text
         end)
     end,
