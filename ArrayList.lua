@@ -53,10 +53,12 @@ Arraylist = {
         Text.TextSize = TextScale
         Text.Text = newName.." "
         local size = game:GetService("TextService"):GetTextSize(newName, TextScale, Enum.Font.Gotham, Vector2.new(1000000, 1000000))
-        Text.TextXAlignment = "Right"
+        Text.TextXAlignment = "Left"
         Text.LayoutOrder = -size.X
 	Text.TextColor3 = makeRainbowText(Text)
 	Text.TextStrokeTransparency = 0
+	Text.TextStrokeColor = Color3FromRGB(0,0,0)
+	Text.TextStroke = 1
         task.spawn(function()
             repeat
                 task.wait()
